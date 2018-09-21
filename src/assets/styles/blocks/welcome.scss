@@ -1,0 +1,22 @@
+.wrapper{
+  position: relative;
+  width: 100%; //понадобится при реализации адаптива
+  //min-width: 940px + 20px;
+  //min-height: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.welcome{
+  background: url("../../images/bg/hero.jpg") center center / cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+
+
+  color: #fff;
+}
+
+.welcome__pic--img{
+  background: url("../../images/content/user.jpg") center center / cover no-repeat;
+}
