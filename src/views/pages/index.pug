@@ -1,12 +1,8 @@
 extends ../auth.layout.pug
 
 block content
-  .hello-world
-    +icon('check', 'hello-world__block')
-    .inlined-svg
-
-block content
-  .welcome__header
-    button(type="button" class="auth-btn") Авторизоваться
-  .welcome
-    include ../common/welcome.pug
+  .wrapper
+    .welcome__header
+      button(type="button" class="auth-btn") Авторизоваться
+    .welcome
+      include ../common/welcome.pug
