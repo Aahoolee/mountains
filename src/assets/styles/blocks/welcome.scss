@@ -1,123 +1,3 @@
-.wrapper{
-  position: relative;
-  width: 100%; //понадобится при реализации адаптива
-  //min-width: 940px + 20px;
-  //min-height: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.welcome{
-  background: url("assets/images/bg/hero.jpg") center center / cover no-repeat;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.welcome__block{
-  height: 100vh;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.welcome__card{
-  background-color: rgba(252, 252, 252, 0.8);
-  width: 380px;
-  height: 396px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-}
-.welcome__content{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  align-content: space-between;
-  font-family: Roboto, Helvetica, sans-serif;
-  font-weight: 700;
-}
-
-.welcome__pic{
-  background: url("assets/images/content/user.jpg");
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-top: 40px;
-
-}
-
-.welcome__text{
-  font-weight: 400;
-}
-
-.welcome__socials{
-  display: flex;
-
-}
-
-.welcome__menu{
-  //display: flex;
-  //width: 100%;
-}
-
-.welcome__menu-list{
-  display: flex;
-  flex-direction: row;
-  height: 45px;
-  align-content: space-between;
-  justify-content: space-around;
-
-}
-
-.welcome__menu-item{
-  position: relative;
-  border-right: solid rgba(255, 255, 255, 0.5) 1px;
-  &:last-child {
-    border-right: none;
-  }
-  width: 100%;
-  background-color: #00bfa5;
-  border-radius: 2px;
-}
-
-.welcome__menu-link{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-
-  vertical-align: middle;
-
-  width: 100%;
-  height: 100%;
-
-  background-color: #00bfa5;
-  transition: 400ms;
-  &:hover{
-    background-color: #009688;
-    transition: 400ms;
-  }
-  white-space: nowrap;
-}
-
-.welcome__header{
-  //display: flex;
-  //float: right;
-
-}
-
 .auth-btn{
   position: absolute;
   color: #ffffff;
@@ -135,6 +15,99 @@
   top: 2%;
 }
 
+.welcome{
+  background: url("assets/images/bg/hero.jpg") center center / cover no-repeat;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome__block{
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome__card{
+  background-color: rgba(252, 252, 252, 0.8);
+  width: 380px;
+  height: 396px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+.welcome__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.user__pic{
+  background: url("assets/images/content/user.jpg");
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+
+.user__name{
+  font-size: 35px;
+}
+.user__info{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.welcome__menu-list{
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-around;
+  height: 45px;
+}
+
+.welcome__menu-item{
+  position: relative;
+  width: 100%;
+  border-right: solid rgba(11, 178, 159, 0.5) 2px;
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.welcome__menu-link{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  border-radius: 2px;
+  background-color: #00bfa5;
+  transition: 400ms;
+  &:hover{
+    background-color: #009688;
+    transition: 400ms;
+  }
+}
+
 .welcome__footer{
   color: #fff;
   margin-bottom: 2%;
@@ -142,25 +115,3 @@
   text-align: center;
 }
 
-.socials{
-  margin-top: 25px;
-  width: 40%;
-  //height: 50px;
-}
-.socials__list{
-  display: flex;
-  justify-content: space-between;
-}
-
-.socials__svg{
-  display: block;
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  fill: rgba(0, 190, 165, 0.5);
-  transition: 400ms;
-  &:hover{
-    transition: 400ms;
-    fill:rgba(0, 191, 165, 1)
-  }
-}

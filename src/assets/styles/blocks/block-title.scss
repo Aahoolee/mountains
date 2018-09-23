@@ -1,0 +1,27 @@
+.block-title{
+  font-family: bernier;
+  font-size: 63px;
+  text-align: center;
+  &:before{
+    background: url("assets/images/icons/sprite.svg#about_bg_left");
+    width: 40px;
+    height: 22px;
+    fill: rgba(0, 0, 0, 1);
+  }
+}
+
+.block-subtitle{
+  font-family: bernier;
+  font-size: 35px;
+  text-align: center;
+}
+
+.user-description__image{
+  display: flex;
+  justify-content: center;
+}
+
+.user-description__avatar{
+  width: 445px;
+  height: 390px;
+}
