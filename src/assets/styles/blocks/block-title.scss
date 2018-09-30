@@ -18,7 +18,7 @@
     height: 5px;
     fill: rgba(0, 0, 0, 1);
     top: 36px;
-    left: -30px;
+    left: -42px;
   }
   &:after{
     content: "";
@@ -30,9 +30,19 @@
     height: 5px;
     fill: rgba(0, 0, 0, 1);
     top: 36px;
-    right: -30px;
+    right: -42px;
   }
 
+}
+
+.block-title--white{
+  &:before{
+    background-color: rgba(255,255,255,0.4);
+
+  }
+  &:after{
+    background-color: rgba(255,255,255,0.4);
+  }
 }
 
 .block-subtitle{
@@ -64,5 +74,14 @@
     fill: rgba(0, 0, 0, 1);
     top: 20px;
     right: -30px;
+  }
+}
+
+.block-subtitle--blog{
+  &:before{
+    display: none;
+  }
+  &:after{
+    display: none;
   }
 }

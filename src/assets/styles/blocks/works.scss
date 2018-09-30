@@ -32,6 +32,7 @@
 }
 
 .slider__desc{
+  width: 100%;
   grid-area: left;
   text-align: center;
   margin: auto;
@@ -41,9 +42,11 @@
 }
 
 .slider__desc--skills{
+  //width: 50%;
+  text-align: center;
   border-top: solid 1px #16c2aa;
   border-bottom: solid 1px #16c2aa;
-  margin: 40px 0;
+  margin: 40px 25%;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -157,7 +160,8 @@
 
 .contacts__blur-bg{
   width: 382px;
-  height: 442px;
+  height: 441px;
+  border-radius: 5px;
   background-color: rgba(255, 255, 255, 0.4);
   filter: blur(1px);
   position: absolute;
@@ -166,9 +170,6 @@
 .contacts__form--blur{
   width: 380px;
   height: 440px;
-  //
-  border-radius: 5px;
-  //
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -228,6 +229,8 @@
 
 .send__btn{
   width: 50%;
+  border-right: solid rgba(222, 227, 231, 0.3) 2px;
+
 }
 
 .send__reset{

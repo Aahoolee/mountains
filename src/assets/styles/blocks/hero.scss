@@ -11,6 +11,10 @@
   clip-path: polygon(0% 0%, 0% 80%, 50% 100%, 100% 80%, 100% 0%);
 }
 
+.hero--blog{
+  height: 396px;
+}
+
 .hero__socials{
   position: absolute;
   left: 2%;
@@ -34,9 +38,20 @@
   }
 }
 
+.hero__title{
+  //display: flex;
+  //justify-content: center;
+}
+
+
+
 .hero__user{
   color: white;
-  margin-top: 60px;
+  margin-top: 80px;
+}
+
+.hero__user--blog{
+  margin-top: 40px;
 }
 
 .hero__down-btns{
