@@ -1,0 +1,279 @@
+// section slider
+.slider{
+  height: 100%;
+  //display: grid;
+
+}
+
+.slider__title{
+  grid-area: title;
+  //display: flex;
+  align-self: center;
+  //height: 190px;
+  display: flex;
+  justify-content: center;
+  padding: 35px 0;
+  background: url("assets/images/bg/about_header.png") center center / 100% no-repeat;
+  background-size: 50%;
+}
+
+.slider__block{
+  display: grid;
+  min-height: 100vh;
+
+  //overflow: hidden;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: [title] 1fr [active-s] 2.7fr [active-e] 1.2fr [arrows];
+  grid-template-areas:
+    "title title title title"
+    "left left right right"
+    "left left down up";
+}
+
+.slider__desc{
+  grid-area: left;
+  text-align: center;
+  margin: auto;
+  padding: 245px 0;
+  background: #efeee9;
+  background-size: cover;
+}
+
+.slider__desc--skills{
+  border-top: solid 1px #16c2aa;
+  border-bottom: solid 1px #16c2aa;
+  margin: 40px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.slider__desc--btn{
+  //width: 200px;
+  //height: 45px;
+  padding: 10px 20px 10px 20px;
+  background-color: #16c2aa;
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
+  &:hover{
+    transition: 400ms;
+    background-color: #009688;
+  }
+  &:before{
+    content: "";
+    position: absolute;
+    display: block;
+    background: url(assets/images/icons/sprite.svg#link);
+    fill: #ffffff;
+    height: 22px;
+    left: 1.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+  }
+}
+
+.slider__sites-active{
+  grid-area: right;
+  background-color: #eeebdf;
+}
+
+.slider__sites-down{
+  grid-area: down;
+  background-color: #00bea5;
+}
+
+.slider__sites-up{
+  grid-area: up;
+  background-color: #ffff00;
+}
+
+// section reviews
+
+.reviews{
+  background: url("assets/images/bg/works_bg.jpg") center center / cover no-repeat;
+
+}
+
+.reviews__title{
+  display: flex;
+  justify-content: center;
+  padding-top: 70px;
+  background: url("assets/images/bg/about_header.png") center center / cover no-repeat;
+  background-size: 50%;
+}
+
+.reviews__list{
+  display: flex;
+  margin: 0 210px;
+  padding-top: 70px;
+}
+
+.reviews__item{
+  margin-right: 30px;
+}
+
+
+.reviews__item--quote{
+  width: 100%;
+  font-family: fontawesome;
+  font-size: 40px;
+  opacity: 0.2;
+}
+
+.reviews__item--text{
+  padding-top: 30px;
+}
+
+.reviews__item--author{
+  display: flex;
+  padding-top: 30px;
+
+}
+
+.reviews__item--ava{
+  border-radius: 50%;
+}
+
+.reviews__item--person{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  color: #20b5a1;
+}
+
+.reviews__item--name{
+  font-weight: 700;
+}
+
+.contacts__form{
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__blur-bg{
+  width: 382px;
+  height: 442px;
+  background-color: rgba(255, 255, 255, 0.4);
+  filter: blur(1px);
+  position: absolute;
+}
+
+.contacts__form--blur{
+  width: 380px;
+  height: 440px;
+  //
+  border-radius: 5px;
+  //
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+  padding-top: 40px;
+  position: relative;
+}
+
+.form__block{
+  display: flex;
+  justify-content: center;
+}
+
+#user-name{
+  width: 340px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#user-email{
+  width: 340px;
+  height: 45px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#user-message{
+  width: 340px;
+  height: 140px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+
+.form__input{
+  padding-left: 10px;
+
+  vertical-align: middle;
+}
+
+.form__input--message{
+  padding-top: 20px;
+}
+
+.form__btn{
+  display: flex;
+  align-items: flex-end;
+  //height: 45px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.send__btn{
+  width: 50%;
+}
+
+.send__reset{
+  width: 50%;
+}
+
+.send-btn{
+  width: 100%;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  background-color: #00bfa5;
+  transition: 400ms;
+  &:hover{
+    background-color: #009688;
+    transition: 400ms;
+  }
+}
+
+.send-reset{
+  width: 100%;
+  height: 45px;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  background-color: #00bfa5;
+  transition: 400ms;
+  &:hover{
+    background-color: #009688;
+    transition: 400ms;
+  }
+}
+
+.up-btn{
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  padding-top: 70px;
+
+}
+
+.arrow__up{
+  padding-bottom: 70px;
+}

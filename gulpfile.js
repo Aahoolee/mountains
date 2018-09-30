@@ -9,6 +9,7 @@ const $gp = require("gulp-load-plugins")();
 const browserSync = require("browser-sync").create();
 const reload = browserSync.reload;
 const $webpack = require("webpack-stream");
+const moduleImporter = require("sass-module-importer");
 const webpack = require("webpack");
 const del = require("del");
 
@@ -18,6 +19,13 @@ gulp.task("styles", () => {
     .src(`${config.SRC_DIR}/styles/main.scss`)
     .pipe($gp.sourcemaps.init())
     .pipe($gp.plumber())
+    .pipe($gp.sassGlob())
+    .pipe(
+        $gp.sass({
+            outputStyle: "compressed",
+            importer: moduleImporter()
+        })
+    )
     .pipe($gp.postcss(require("./postcss.config")))
     .pipe($gp.rename("main.min.css"))
     .pipe($gp.if(env === "development", $gp.sourcemaps.write()))

@@ -1,0 +1,50 @@
+/// FOOTER SECTION
+
+.footer{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 145px;
+  //display: flex;
+
+}
+
+.footer__row{
+  display: flex;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.footer__col{
+
+  color: white;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.footer__col_justify_end{
+  display: flex;
+  justify-content: flex-end;
+}
+.menu{
+
+}
+.menu__list{
+  //width: 40%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu__item{
+
+}
+
+.menu__link{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+
+.footer__text{
+  color: white;
+}

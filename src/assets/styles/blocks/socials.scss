@@ -44,3 +44,19 @@
     fill:rgba(255, 255, 255, 1)
   }
 }
+
+.socials__link-icon{
+  width: 30px;
+  height: 22px;
+  fill: rgba(255, 255, 255, 0.7);
+  transition: 400ms;
+  &:hover{
+    transition: 400ms;
+    fill:rgba(255, 255, 255, 1)
+  }
+}
+
+.socials_round{
+  display: flex;
+  align-content: flex-start;
+}
