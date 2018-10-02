@@ -1,0 +1,19 @@
+.fsmenu__container{
+  height: 100vh;
+  background-color: rgba($green, 0.5);
+  display: none;
+}
+
+.fsmenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fsmenu__list{
+  padding-bottom: 70px;
+}
+
+.fsmenu__item{
+  color: $white;
+}

@@ -1,0 +1,69 @@
+.welcome__block
+    .welcome__card
+        .welcome__card-front
+            .welcome__content
+                .user.welcome__user
+                    .user__pic
+                    h1.user__name Анна Никитина
+                    p.user__info Личный сайт веб-разработчика
+                .socials
+                    ul.socials__list
+                        li.socials__item: a.socials__link(href='https://vk.com/aimeethanatogenos', target="_blank")
+                                svg.socials__svg
+                                    use(xlink:href="assets/images/icons/sprite.svg#vk")
+                        li.socials__item
+                            a.socials__link(href='https://github.com/Aahoolee', target="_blank")
+                                svg.socials__svg
+                                    use(xlink:href="assets/images/icons/sprite.svg#github")
+                        li.socials__item
+                            a.socials__link(href='https://t.me/ankanka', target="_blank")
+                                svg.socials__svg
+                                    use(xlink:href="assets/images/icons/sprite.svg#telegram_logo")
+            .welcome__menu
+                ul.welcome__menu-list
+                    li.welcome__menu-item
+                        a.welcome__menu-link(href='works.html') Мои работы
+                    li.welcome__menu-item
+                        a.welcome__menu-link(href='about.html') Обо мне
+                    li.welcome__menu-item
+                        a.welcome__menu-link(href='blog.html') Блог
+
+        .welcome__card-back
+            .welcome__content--back
+                .user.welcome__user
+                    .block-subtitle Авторизуйтесь
+                    label.form__block(for='login')
+                        span.form__block-label
+                            svg.form__svg
+                                use(xlink:href="assets/images/icons/sprite.svg#login")
+                        input#login.form__input.form__input--auth(name='login', type='text', placeholder="Логин")
+                    label.form__block(for='password')
+                        span.form__block-label
+                            svg.form__svg
+                                use(xlink:href="assets/images/icons/sprite.svg#password")
+                        input#password.form__input.form__input--auth(name='password', type='text', placeholder="Пароль")
+                    label.form__block_welcome-back(for='checkbox')
+                        input#checkbox.form__checkbox(name='checkbox', type='checkbox')
+                        span.form__block_checkbox
+                            svg.check__svg
+                                use(xlink:href="assets/images/icons/sprite.svg#check")
+                        span.form__title_checkbox Я человек
+                    .form__title_check Вы точно не робот?
+                    .form__block_confirm
+                        label.form__block--confirm(for='confirm_yes')
+                            input#confirm_yes.form__radio(type='radio', name='confirm', value='Да')
+                            span.form__block_radio
+                            span.form__title Да
+                        label.form__block--confirm(for='confirm_no')
+                            input#confirm_no.form__radio(type='radio', name='confirm', value='Не уверен')
+                            span.form__block_radio
+                            span.form__title Не уверен
+
+            .welcome__menu
+                ul.welcome__menu-list
+                    li.welcome__menu-item
+                        a.welcome__menu-link(href='index.html') На главную
+                    li.welcome__menu-item
+                        a.welcome__menu-link(href='about.html') Войти
+
+.welcome__footer © Анна Никитина | создано с любовью в LoftSchool | 2018

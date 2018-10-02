@@ -31,7 +31,7 @@
 }
 
 .sidebar__item--active{
-  border-right: solid rgba(11, 178, 159, 1) 3px;
+  border-right: solid $green 3px;
 }
 
 .blog__content{
@@ -53,7 +53,7 @@
 }
 
 .article__date{
-  color: #009688;
+  color: $green;
   padding-top: 30px;
 }
 

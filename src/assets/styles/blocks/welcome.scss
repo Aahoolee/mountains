@@ -33,19 +33,36 @@
 }
 
 .welcome__card{
+  position: relative;
   background-color: rgba(252, 252, 252, 0.8);
   width: 380px;
   height: 396px;
   border-radius: 5px;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+}
+
+.welcome__card-front{
+  position: absolute;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  display: none;
+  //transform: rotateY(0deg);
 
 }
+
 .welcome__content{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.welcome__content--back{
+  padding-top: 40px;
 }
 
 .user{
@@ -88,7 +105,6 @@
   }
 }
 
-
 .welcome__menu-link{
   position: absolute;
   width: 100%;
@@ -101,13 +117,175 @@
   text-align: center;
   color: white;
   border-radius: 2px;
-  background-color: #00bfa5;
+  background-color: rgba($green, .85);
   transition: 400ms;
   &:hover{
-    background-color: #009688;
+    background-color: #088d85;
     transition: 400ms;
   }
 }
+
+.welcome__card-back{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //transform: rotateY(-180deg);
+
+}
+
+#login{
+  width: 295px;
+  height: 45px;
+  border: none;
+  margin-top: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#password{
+  width: 295px;
+  height: 45px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-top: 20px;
+}
+
+.form__block-label{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: #f0efe9;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+
+}
+
+.form__svg{
+  width: 19px;
+  height: 19px;
+  fill: #c4cbcd;
+  transition: 400ms;
+
+}
+.form__checkbox{
+  display: none;
+}
+
+.form__block_checkbox{
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  vertical-align: middle;
+  color: $green;
+  border: solid $green 1px;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.form__checkbox:checked + .form__block_checkbox:before{
+  content: "";
+  //font-weight: 700;
+  z-index: 1;
+  background-color: $green;
+  color: white;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //border-radius: 50%;
+}
+
+.check__svg{
+  z-index: 5;
+  fill: white;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 0;
+  bottom: 0;
+
+}
+
+.form__block_checkbox{
+  width: 20px;
+  height: 20px;
+  border-radius: solid $green 2px;
+}
+
+.form__title_checkbox{
+  padding-left: 10px;
+}
+
+.form__title_check{
+  font-weight: 700;
+  padding-top: 15px;
+}
+
+.form__block_welcome-back{
+  padding-top: 15px;
+}
+
+.form__block_confirm{
+  padding-top: 15px;
+}
+
+.form__block--confirm{
+  margin: 0 20px;
+}
+
+.form__radio{
+  display: none;
+}
+
+.form__block_radio{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  vertical-align: middle;
+  color: $green;
+  position: relative;
+  display: inline-block;
+}
+
+.form__radio:checked + .form__block_radio:before{
+  content: "";
+  background-color: $green;
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  border-radius: 50%;
+}
+
+.form__radio:checked{
+  border: 2px solid $green;
+}
+
+.form__title{
+  padding-left: 10px;
+
+}
+
+
 
 .welcome__footer{
   color: #fff;
@@ -115,4 +293,3 @@
   padding: 0 10px;
   text-align: center;
 }
-

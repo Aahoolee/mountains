@@ -44,8 +44,8 @@
 .slider__desc--skills{
   //width: 50%;
   text-align: center;
-  border-top: solid 1px #16c2aa;
-  border-bottom: solid 1px #16c2aa;
+  border-top: solid 1px $green;
+  border-bottom: solid 1px $green;
   margin: 40px 25%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -55,13 +55,13 @@
   //width: 200px;
   //height: 45px;
   padding: 10px 20px 10px 20px;
-  background-color: #16c2aa;
+  background-color: $green;
   border-radius: 3px;
   color: white;
   text-decoration: none;
   &:hover{
     transition: 400ms;
-    background-color: #009688;
+    background-color: #088d85;
   }
   &:before{
     content: "";
@@ -84,7 +84,7 @@
 
 .slider__sites-down{
   grid-area: down;
-  background-color: #00bea5;
+  background-color: $green;
 }
 
 .slider__sites-up{
@@ -144,7 +144,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 20px;
-  color: #20b5a1;
+  color: $green;
 }
 
 .reviews__item--name{
@@ -211,9 +211,11 @@
 
 .form__input{
   padding-left: 10px;
-
-  vertical-align: middle;
+  &::placeholder {
+    color: rgba($grey, .5);
+  }
 }
+
 
 .form__input--message{
   padding-top: 20px;
@@ -245,10 +247,10 @@
   color: white;
   border: none;
   border-radius: 2px;
-  background-color: #00bfa5;
+  background-color: $green;
   transition: 400ms;
   &:hover{
-    background-color: #009688;
+    background-color: #088d85;
     transition: 400ms;
   }
 }
@@ -261,10 +263,10 @@
   color: white;
   border: none;
   border-radius: 2px;
-  background-color: #00bfa5;
+  background-color: $green;
   transition: 400ms;
   &:hover{
-    background-color: #009688;
+    background-color: #088d85;
     transition: 400ms;
   }
 }

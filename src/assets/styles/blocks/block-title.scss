@@ -9,39 +9,42 @@
   text-align: center;
   vertical-align: middle;
 
-  &:before{
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: rgba(0,0,0,0.2);
-    width: 22px;
-    height: 5px;
-    fill: rgba(0, 0, 0, 1);
-    top: 36px;
-    left: -42px;
+  &:hover{
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: rgba($grey,0.2);
+      width: 22px;
+      height: 5px;
+      top: 36px;
+      left: -42px;
+    }
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      //vertical-align: middle;
+      background-color: rgba($grey,0.2);
+      width: 22px;
+      height: 5px;
+      top: 36px;
+      right: -42px;
+    }
   }
-  &:after{
-    content: "";
-    display: block;
-    position: absolute;
-    //vertical-align: middle;
-    background-color: rgba(0,0,0,0.2);
-    width: 22px;
-    height: 5px;
-    fill: rgba(0, 0, 0, 1);
-    top: 36px;
-    right: -42px;
-  }
+
+
 
 }
 
 .block-title--white{
-  &:before{
-    background-color: rgba(255,255,255,0.4);
-
-  }
-  &:after{
-    background-color: rgba(255,255,255,0.4);
+  &:hover{
+    &:before{
+      background-color: rgba(255,255,255,0.4);
+    }
+    &:after{
+      background-color: rgba(255,255,255,0.4);
+    }
   }
 }
 
@@ -53,35 +56,38 @@
   font-family: bernier;
   font-size: 35px;
   text-align: center;
-  &:before{
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: rgba(0,0,0,0.2);
-    width: 22px;
-    height: 5px;
-    fill: rgba(0, 0, 0, 1);
-    top: 20px;
-    left: -30px;
-  }
-  &:after{
-    content: "";
-    display: block;
-    position: absolute;
-    background-color: rgba(0,0,0,0.2);
-    width: 22px;
-    height: 5px;
-    fill: rgba(0, 0, 0, 1);
-    top: 20px;
-    right: -30px;
+  &:hover{
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: rgba($grey,0.2);
+      width: 22px;
+      height: 5px;
+      top: 20px;
+      left: -30px;
+    }
+    &:after{
+      content: "";
+      display: block;
+      position: absolute;
+      background-color: rgba($grey,0.2);
+      width: 22px;
+      height: 5px;
+      top: 20px;
+      right: -30px;
+    }
   }
 }
 
 .block-subtitle--blog{
-  &:before{
-    display: none;
+  &:hover{
+    &:before{
+      display: none;
+    }
+    &:after{
+      display: none;
+    }
   }
-  &:after{
-    display: none;
-  }
+
 }
