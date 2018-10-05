@@ -21,7 +21,7 @@ block content
                         a(href=`${item[0]}`, target="_blank").socials__link.socials__link--hero
                             +icon(item[1], 'socials__svg socials__svg--hero')
         .hero__menu
-            button.hamburger(type='submit')
+            button.hamburger(type='button')
                 svg.hamburger__svg
                     use(xlink:href="assets/images/icons/sprite.svg#hamburger")
 
@@ -51,10 +51,10 @@ block content
 
             .slider__sites-active
             //.slider__sites--unactive
-            .slider__sites-down
+            button.slider__sites-down(type="button")
                 svg.arrowdown__svg
                     use(xlink:href="assets/images/icons/sprite.svg#arrow_down")
-            .slider__sites-up
+            button.slider__sites-up(type="button")
                 svg.arrowdown__svg
                     use(xlink:href="assets/images/icons/sprite.svg#arrow_up")
 

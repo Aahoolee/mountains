@@ -21,9 +21,9 @@ block content
             a(href=`${item[0]}`, target="_blank").socials__link.socials__link--hero
               +icon(item[1], 'socials__svg socials__svg--hero')
     .hero__menu
-      a(href="").hamburger
-        svg.hamburger__svg
-          use(xlink:href="assets/images/icons/sprite.svg#hamburger")
+        button.hamburger(type='button')
+            svg.hamburger__svg
+                use(xlink:href="assets/images/icons/sprite.svg#hamburger")
 
     .hero__title
       .section-title

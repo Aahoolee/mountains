@@ -36,8 +36,8 @@
   display: flex;
   justify-content: center;
   padding: 35px 0;
-  background: url("assets/images/bg/about_header.png") center center / 100% no-repeat;
-  background-size: 50%;
+  background: url("assets/images/bg/about_header.png") center center / cover no-repeat;
+  background-size: 40%;
 }
 
 .slider__desc{
@@ -111,7 +111,7 @@
 
 .reviews{
   background: url("assets/images/bg/works_bg.jpg") center center / cover no-repeat;
-
+  height: 1290px;
 }
 
 .reviews__title{
@@ -119,13 +119,13 @@
   justify-content: center;
   padding-top: 70px;
   background: url("assets/images/bg/about_header.png") center center / cover no-repeat;
-  background-size: 50%;
+  background-size: 40%;
 }
 
 .reviews__list{
   display: flex;
   margin: 0 210px;
-  padding-top: 70px;
+  padding-top: 65px;
 }
 
 .reviews__item{
@@ -141,12 +141,12 @@
 }
 
 .reviews__item--text{
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .reviews__item--author{
   display: flex;
-  padding-top: 30px;
+  padding-top: 25px;
 
 }
 

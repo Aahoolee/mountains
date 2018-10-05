@@ -1,5 +1,3 @@
-console.log("auth module loaded");
-
 const authBtn = document.querySelector(".js-auth-btn");
 const mainBtn = document.querySelector(".js-main-btn");
 const cardFront = document.querySelector(".welcome__card-front");
