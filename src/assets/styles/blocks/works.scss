@@ -5,6 +5,29 @@
 
 }
 
+
+.slider__block{
+  display: grid;
+  min-height: 100vh;
+  //overflow: hidden;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: [title] 1fr [active-s] 2.7fr [active-e] 1.2fr [arrows];
+  grid-template-areas:
+    "title title title title"
+    "left left right right"
+    "left left down up";
+  @include tablets{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: [title] 10% [active-s] 40% [active-e] 20% [desc] 1.65fr [end];
+    grid-template-areas:
+            "title title"
+            "active active"
+            "desc desc"
+            "down up";
+  }
+}
+
 .slider__title{
   grid-area: title;
   //display: flex;
@@ -17,20 +40,6 @@
   background-size: 50%;
 }
 
-.slider__block{
-  display: grid;
-  min-height: 100vh;
-
-  //overflow: hidden;
-
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: [title] 1fr [active-s] 2.7fr [active-e] 1.2fr [arrows];
-  grid-template-areas:
-    "title title title title"
-    "left left right right"
-    "left left down up";
-}
-
 .slider__desc{
   width: 100%;
   grid-area: left;
@@ -39,6 +48,9 @@
   padding: 245px 0;
   background: #efeee9;
   background-size: cover;
+  @include tablets{
+    grid-area: desc;
+  }
 }
 
 .slider__desc--skills{
@@ -80,6 +92,9 @@
 .slider__sites-active{
   grid-area: right;
   background-color: #eeebdf;
+  @include tablets{
+    grid-area: active;
+  }
 }
 
 .slider__sites-down{

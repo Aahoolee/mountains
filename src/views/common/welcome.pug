@@ -4,7 +4,7 @@
             .welcome__content
                 .user.welcome__user
                     .user__pic
-                    h1.user__name Анна Никитина
+                    h2.user__name Анна Никитина
                     p.user__info Личный сайт веб-разработчика
                 .socials
                     ul.socials__list
@@ -29,9 +29,9 @@
                         a.welcome__menu-link(href='blog.html') Блог
 
         .welcome__card-back
-            .welcome__content--back
+            .welcome__content-back
                 .user.welcome__user
-                    .block-subtitle Авторизуйтесь
+                    h3.block-subtitle Авторизуйтесь
                     label.form__block(for='login')
                         span.form__block-label
                             svg.form__svg
@@ -62,8 +62,8 @@
             .welcome__menu
                 ul.welcome__menu-list
                     li.welcome__menu-item
-                        a.welcome__menu-link(href='index.html') На главную
+                        button.welcome__menu-link.js-main-btn(type="button") На главную
                     li.welcome__menu-item
-                        a.welcome__menu-link(href='about.html') Войти
+                        input#auth.welcome__menu-link(type='submit', name='auth', value='Войти')
 
 .welcome__footer © Анна Никитина | создано с любовью в LoftSchool | 2018

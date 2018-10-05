@@ -26,6 +26,14 @@
   top: 30px;
 }
 
+.hamburger{
+  background: transparent;
+  &:focus{
+    outline: none;
+  }
+
+}
+
 .hamburger__svg{
   width: 30px;
   height: 22px;

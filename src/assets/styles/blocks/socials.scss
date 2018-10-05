@@ -1,6 +1,5 @@
 .socials{
-  margin-top: 30px;
-  width: 40%;
+
 }
 
 .socials__list{
@@ -10,8 +9,28 @@
 
 .socials__list--hero{
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.socials__item{
+  margin: 0 15px;
+}
+
+.socials__link--round{
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border: solid #9eaaab 1px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: 400ms;
+  &:hover{
+    transition: 400ms;
+    background: $white;
+    border: none;
+  }
 }
 
 .socials__svg{
@@ -20,8 +39,18 @@
   fill: rgba(0, 190, 165, 0.5);
   transition: 400ms;
   &:hover{
-    transition: 400ms;
+    //transition: 400ms;
     fill:rgba(0, 190, 165, 1)
+  }
+}
+
+.socials__svg-round{
+  width: 25px;
+  height: 15px;
+  fill: #9eaaab;
+  transition: none;
+  &:hover{
+    fill: #9eaaab;
   }
 }
 

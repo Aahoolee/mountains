@@ -21,7 +21,7 @@ block content
                         a(href=`${item[0]}`, target="_blank").socials__link.socials__link--hero
                             +icon(item[1], 'socials__svg socials__svg--hero')
         .hero__menu
-            a(href="").hamburger
+            button.hamburger(type='submit')
                 svg.hamburger__svg
                     use(xlink:href="assets/images/icons/sprite.svg#hamburger")
 
@@ -31,7 +31,6 @@ block content
 
             .user.hero__user
                 .user__pic
-                    img.user__pic-img
                 .user__description
                     .user__name Анна Никитина
                     .user__info Личный сайт веб-разработчика
@@ -44,9 +43,9 @@ block content
 
         .slider__block
             .slider__title
-                .block-title Мои работы
+                h2.block-title Мои работы
             .slider__desc
-                .block-subtitle Сайт коворкинга
+                h3.block-subtitle Сайт коворкинга
                 .slider__desc--skills HTML, CSS
                 a(href="https://aahoolee.github.io/workadium/").slider__desc--btn Посмотреть сайт
 
@@ -62,10 +61,10 @@ block content
 
     section.reviews
         .reviews__title
-            .block-title Что обо мне говорят
+            h2.block-title Что обо мне говорят
         ul.reviews__list
             li.reviews__item
-                h1.reviews__item--quote 
+                .reviews__item--quote 
                 p.reviews__item--text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                 .reviews__item--author
                     .reviews__item--pic
@@ -74,7 +73,7 @@ block content
                         .reviews__item--name Дмитрий Ковальчук
                         .reviews__item--prof Основатель школы LoftSchool
             li.reviews__item
-                h1.reviews__item--quote 
+                .reviews__item--quote 
                 p.reviews__item--text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                 .reviews__item--author
                     .reviews__item--pic
@@ -88,7 +87,7 @@ block content
             .contacts__blur-bg
             .contacts__form--blur
                 .contacts__title
-                    .block-subtitle Связаться со мной
+                    h3.block-subtitle Связаться со мной
                 label.form__block(for='user-name')
                     .form__title
                     input#user-name.form__input(name='user-name', type='text', placeholder="Имя")
