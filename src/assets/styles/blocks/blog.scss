@@ -8,7 +8,8 @@
 
 .blog__sidebar{
   grid-area: sidebar;
-  //display: flex;
+  height: 100%;
+  display: flex;
   padding-left: 40px;
   padding-top: 70px;
 
@@ -16,7 +17,8 @@
 .sidebar__list{
   display: flex;
   flex-direction: column;
-
+  height: 500px;
+  position: sticky;
 }
 
 .sidebar__item{
