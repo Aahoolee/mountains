@@ -136,6 +136,8 @@
 
 .welcome__card-back{
   transform: rotateY(180deg);
+  opacity: 0;
+  //display: none;
 }
 
 #login{

@@ -6,7 +6,9 @@ const cardBack = document.querySelector(".welcome__card-back");
 
 authBtn.onclick = function () {
     cardFront.style.transform = "rotateY(180deg)";
+
     cardBack.style.transform = "rotateY(360deg)";
+    cardBack.style.opacity = "1";
     authBtn.style.display = 'none'
 
 };
@@ -14,6 +16,7 @@ authBtn.onclick = function () {
 mainBtn.onclick = function () {
     cardBack.style.transform = "rotateY(180deg)";
     cardFront.style.transform = "rotateY(360deg)";
+
     authBtn.style.display = 'block'
 };
 
